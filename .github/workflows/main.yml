@@ -1,5 +1,5 @@
 name: depoly a java application
-on: push
+#on: push
 jobs:
   build:
    runs-on: ubuntu-latest
