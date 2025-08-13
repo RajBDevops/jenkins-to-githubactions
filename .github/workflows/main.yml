@@ -1,5 +1,5 @@
 name: depoly a java application
-#on: push
+on: push
 jobs:
   build:
    runs-on: ubuntu-latest
@@ -17,7 +17,7 @@ jobs:
      run: mvn clean package
      working-directory: my-java-app
 
-   - name: Run the app
-     run: java -cp target/my-java-app-1.0.0.jar com.example.App
+   - name: Run the application
+     run: java -jar target/my-java-app-1.0.0.jar
      working-directory: my-java-app
   
